@@ -1,0 +1,10 @@
+version: '2'
+services:
+  ubuntu:
+    image: anandps05/ubuntu:latest
+    build: .
+    ports:
+     - "8001:8001"
+    volumes:
+     - /Users/anandps/docker/ubuntu:/home/anandps
+     - /Users/anandps/Downloads:/home/anandps/Downloads
